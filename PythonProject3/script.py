@@ -47,6 +47,17 @@ def run():
             display: inline-block;
             margin-top: 30px;
         }
+        div[data-testid="stDownloadButton"] > button {
+        background-color: black;
+        color: white !important;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 8px 16px;
+        font-weight: bold;
+    }
+    div[data-testid="stDownloadButton"]:hover > button {
+        background-color: #222;
+    }
         </style>
         """,
         unsafe_allow_html=True
