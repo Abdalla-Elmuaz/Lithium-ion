@@ -2,13 +2,12 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-import urllib.request
+
 
 from sklearn.preprocessing import LabelEncoder
 
 def run():
-    url = 'https://raw.githubusercontent.com/Abdalla-Elmuaz/Lithium-ion/main/PythonProject3/lasso_model_en.pkl'
-    urllib.request.urlretrieve(url, 'lasso_model_en.pkl')
+    
     modellasso_en = joblib.load('lasso_model_en.pkl')
 
      
