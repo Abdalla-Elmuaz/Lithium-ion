@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 
 def run():
     
-    modellasso_en = joblib.load('lasso_model_en.pkl')
+    modellasso_en = joblib.load('lasso_model_en.pk1')
 
      
     # Load the saved model
