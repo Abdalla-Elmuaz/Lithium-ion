@@ -169,7 +169,9 @@ def run():
 
 
         prediction_data.to_csv(file_path, mode='a', header=write_header, index=False)
-        st.download_button("Download Predictions CSV", f, file_name="predictions.csv", mime="text/csv")
+
+        with open(file_path, "rb") as f:
+            st.download_button("Download Predictions CSV", f, file_name="predictions.csv", mime="text/csv")
         
         
     
