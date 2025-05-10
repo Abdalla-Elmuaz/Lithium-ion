@@ -155,14 +155,16 @@ def run():
         prediction_data = input_data.copy()
         prediction_data['Predicted Degradation Rate'] = prediction[0]
         file_path = "predictions.csv"
-        
-        write_header = not os.path.exists(file_path)
-    
-        prediction_data.to_csv(file_path, mode='a', header=write_header, index=False)
-    
+        if os.path.exists(file_path):
+            prediction_data.to_csv(file_path, mode='a', header=False, index=False)
+        else:
+            prediction_data.to_csv(file_path, mode='w', header=True, index=False)
+
+        # Allow user to download the predictions file
         with open(file_path, "rb") as f:
             st.download_button("Download Predictions CSV", f, file_name="predictions.csv", mime="text/csv")
-
+        
+     
 # Run the app
 if __name__ == "__main__":
     run()
