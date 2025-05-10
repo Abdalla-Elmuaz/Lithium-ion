@@ -61,6 +61,9 @@ def run():
         border-radius: 8px;
         font-weight: bold;
     }
+    div[data-testid="stDownloadButton"]:hover > button {
+        background-color: #f0f0f0;
+    }
         </style>
         """,
         unsafe_allow_html=True
