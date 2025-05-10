@@ -139,7 +139,7 @@ def run():
        'Electrode_Area_Enhanced'], axis=1)
         prediction = modellasso.predict(input_data)
         st.success(f"Predicted Degradation Rate: {prediction[0]:.4f}")
-        prediction_data = df.copy()
+        prediction_data = input_data.copy()
         prediction_data['Predicted Degradation Rate'] = prediction[0]
         file_path = "predictions.csv"
         if os.path.exists(file_path):
