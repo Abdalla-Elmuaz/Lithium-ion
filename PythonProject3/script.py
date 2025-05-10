@@ -154,7 +154,7 @@ def run():
         st.success(f"Predicted Degradation Rate: {prediction[0]:.4f}")
         prediction_data = input_data.copy()
         prediction_data['Predicted Degradation Rate'] = prediction[0]
-        file_path = "predictions.csv"
+        file_path = "degradation_predictions.csv"
         if os.path.exists(file_path):
             prediction_data.to_csv(file_path, mode='a', header=False, index=False)
         else:
