@@ -162,7 +162,7 @@ def run():
         st.success(f"Predicted Enhanced Degradation Rate: {prediction[0]:.4f}")
         prediction_data = input_data.copy()
         prediction_data['Predicted Enhanced Degradation Rate'] = prediction[0]
-        file_path = "predictions.csv"
+        file_path = "predictions_enhanced.csv"
         
         write_header = not os.path.exists(file_path)
 
