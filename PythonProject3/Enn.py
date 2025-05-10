@@ -156,7 +156,7 @@ def run():
        'Charging Mode', 'Battery Type',
        'EV Model', 'Optimal Charging Duration Class', 'c_minus_deltac_proxy',
        'Reaction_Rate_J', 'SEI_Growth_Proxy', 'Plating_Risk_Proxy',
-       'Electrode_Area',
+       'Electrode_Area'
     ], axis=1)
         prediction = modellasso_en.predict(input_data)
         st.success(f"Predicted Enhanced Degradation Rate: {prediction[0]:.4f}")
