@@ -7,9 +7,11 @@ import urllib.request
 from sklearn.preprocessing import LabelEncoder
 
 def run():
-    url = 'https://raw.githubusercontent.com/YourUser/YourRepo/main/path/to/lasso_model_en.pkl'
-    urllib.request.urlretrieve(url, 'lasso_model_en.pkl')  # download it
-    modellasso_en = joblib.load('lasso_model_en.pkl')  
+    url = 'https://raw.githubusercontent.com/Abdalla-Elmuaz/Lithium-ion/main/PythonProject3/lasso_model_en.pkl'
+    urllib.request.urlretrieve(url, 'lasso_model_en.pkl')
+    modellasso_en = joblib.load('lasso_model_en.pkl')
+
+     
     # Load the saved model
     
 
