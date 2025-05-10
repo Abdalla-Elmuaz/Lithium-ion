@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 
 def run():
     # Load the saved model
-    modellasso= joblib.load('lasso_model.pk1')  # fix file extension
+    modellasso= joblib.load('PythonProject3/lasso_model.pk1')  # fix file extension
 
     # Page styling
     st.markdown(
