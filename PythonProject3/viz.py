@@ -36,7 +36,7 @@ def run():
     # Set Streamlit theme
 
 
-    df_Li_ion_Battary = pd.read_csv('liion_preprocessed_data.csv')
+    df_Li_ion_Battary = pd.read_csv('https://github.com/Abdalla-Elmuaz/Lithium-ion/blob/main/PythonProject3/liion_preprocessed_data.csv')
     df_Li_ion_Battary['Duration Bin'] = pd.cut(df_Li_ion_Battary['Charging Duration (min)'], bins=10)
 
     st.title("🔋 Lithium-Ion Battery Analysis Dashboard")
