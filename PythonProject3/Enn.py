@@ -54,16 +54,7 @@ def run():
             display: inline-block;
             margin-top: 30px;
         }
-        div[data-testid="stDownloadButton"] > button {
-        color: black !important;  /* Set the button label text color to black */
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 8px;
-        font-weight: bold;
-    }
-    div[data-testid="stDownloadButton"]:hover > button {
-        background-color: #f0f0f0;
-    }
+        
         </style>
         """,
         unsafe_allow_html=True
